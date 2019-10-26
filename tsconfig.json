@@ -1,0 +1,14 @@
+{ "compileOnSave": true,
+  "compilerOptions": {
+    "module": "none",
+    "noImplicitAny": false,
+    "outFile": "./out/espnDraftProjectionForLeague.js",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true
+  },
+  "files": [
+    "./root/espn_config.ts",
+    "./root/draftProjection.ts"
+  ]
+}
