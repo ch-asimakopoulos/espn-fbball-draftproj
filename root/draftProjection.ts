@@ -35,8 +35,8 @@ const updateStatsForTeam = function (teamId: number, statsToAdd) {
 }
 const calculateFGandFTPerForLeagueTeams = function (sumOfStatsPerTeam) {
     for (let sum of sumOfStatsPerTeam) {
-        sum.ftper = sum.fta / sum.ftm;
-        sum.fgper = sum.fga / sum.fgm;
+        sum.ftper = sum.ftm / sum.fta;
+        sum.fgper = sum.fgm / sum.fga;
     }
     return;
 } 
