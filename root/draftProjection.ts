@@ -4,19 +4,19 @@ const getStatsForPlayer = function (playerId: number) {
     for (let i=0; nbaPlrs.length; i++) {
         let curPlayer = nbaPlrs[i]
         if (playerId != curPlayer.id) continue;
-        let playerToSearchProjectionStats = curPlayer.player.stats[1];
+        let playerToSearchProjectionStats = curPlayer.player.stats[4];
         return {
             'pts': playerToSearchProjectionStats.stats[statsMap[0]],
             'reb': playerToSearchProjectionStats.stats[statsMap[1]],
             'ast': playerToSearchProjectionStats.stats[statsMap[2]],
-            'fga': playerToSearchProjectionStats.stats[statsMap[3]],
-            'fgm': playerToSearchProjectionStats.stats[statsMap[4]],
+            'fga': playerToSearchProjectionStats.stats[statsMap[4]],
+            'fgm': playerToSearchProjectionStats.stats[statsMap[3]],
             'thrpm': playerToSearchProjectionStats.stats[statsMap[5]],
             'to': playerToSearchProjectionStats.stats[statsMap[6]],
             'blk': playerToSearchProjectionStats.stats[statsMap[7]],
             'stl': playerToSearchProjectionStats.stats[statsMap[8]],
-            'fta': playerToSearchProjectionStats.stats[statsMap[9]],
-            'ftm': playerToSearchProjectionStats.stats[statsMap[10]]
+            'fta': playerToSearchProjectionStats.stats[statsMap[10]],
+            'ftm': playerToSearchProjectionStats.stats[statsMap[9]]
         }
     }
 }
